@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Faculty Directory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>College Faculty Directory</h1>
+            <p>Find faculty details and get personalized guidance</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Faculty Search Section -->
+            <section class="section search-section">
+                <h2>Search Faculty</h2>
+                <div class="search-group">
+                    <input type="text" id="facultySearch" placeholder="Enter faculty name or ID...">
+                    <button onclick="searchFaculty()">Search</button>
+                </div>
+                <div id="searchResults" class="results-container"></div>
+            </section>
+
+            <!-- Faculty Guidance Section -->
+            <section class="section guidance-section">
+                <h2>Need Help? Find Right Faculty</h2>
+                <div class="guidance-group">
+                    <textarea id="problemDescription" placeholder="Describe your problem or question..."></textarea>
+                    <button onclick="recommendFaculty()">Get Recommendation</button>
+                </div>
+                <div id="recommendationResults" class="results-container"></div>
+            </section>
+
+            <!-- All Faculty List -->
+            <section class="section faculty-list-section">
+                <h2>Faculty Directory</h2>
+                <div id="facultyList" class="faculty-grid"></div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
